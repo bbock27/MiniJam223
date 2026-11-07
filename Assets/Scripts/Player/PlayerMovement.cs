@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
         {
             pos.y += surfaceY - footPoint.position.y;
             velocity.y = bounceSpeed;
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.Play(AudioManager.SoundType.Jump);
         }
         else
         {
