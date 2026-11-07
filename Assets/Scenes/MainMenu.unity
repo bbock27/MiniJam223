@@ -234,7 +234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2347114982282050963, guid: 9615e3ce74ff83c49afe9da26c551d20, type: 3}
+  m_Sprite: {fileID: 2446224345968666673, guid: 9615e3ce74ff83c49afe9da26c551d20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -587,6 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   gameScene: Brady
+  quitButton: {fileID: 47999385}
 --- !u!1 &728946942
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +837,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.013216449, g: 0.060663972, b: 0.103773594, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1051,7 +1052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2347114982282050963, guid: 9615e3ce74ff83c49afe9da26c551d20, type: 3}
+  m_Sprite: {fileID: 2446224345968666673, guid: 9615e3ce74ff83c49afe9da26c551d20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string gameScene = "Brady";
+    public GameObject quitButton;
 
-    public void StartGame() => SceneManager.LoadScene(gameScene);
+    void Start()
+    {
+        // Browsers don't let a page close itself, so Quit would do nothing there
+        if (quitButton != null && Application.platform == RuntimePlatform.WebGLPlayer)
+            quitButton.SetActive(false);
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(gameScene);
+    }
 
     public void QuitGame()
     {

@@ -4,13 +4,14 @@ using UnityEngine;
 /// Shows the run's score and remaining materials.
 public class Hud : MonoBehaviour
 {
-    public MapManager map;
+    public HeightTracker height;
+    public MaterialBudget materials;
     public TMP_Text scoreText;
     public TMP_Text materialsText;
 
     void Update()
     {
-        scoreText.SetText("Score: {0}", map.Score);
-        materialsText.SetText("Materials: {0}", map.Materials);
+        scoreText.SetText("Score: {0}", height.Score);
+        materialsText.SetText("Materials: {0}", materials.Count);
     }
 }
