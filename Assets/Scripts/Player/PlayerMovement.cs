@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 velocity;
     private float moveInput;
     private LayerMask platformLayer;
+
+    public float BounceHeight => bounceHeight;
 
     void Awake() => platformLayer = LayerMask.GetMask("Platform");
 
@@ -41,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
         }
         transform.position = pos;
     }
+
+    public void Die() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     bool TryLand(float distance, out float surfaceY)
     {
