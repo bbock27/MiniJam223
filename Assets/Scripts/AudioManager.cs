@@ -8,8 +8,8 @@ public class AudioManager : MonoBehaviour
         Jump,
         Powerup,
         Music_Menu,
-        Music_Battle
-        // Add more sound types as needed
+        Music_Battle,
+        Pickup
     }
  
     [System.Serializable]
